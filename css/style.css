@@ -54,6 +54,16 @@ p {
     font-size: 16px;
 }
 
+.header nav a:hover {
+    text-decoration: underline;
+}
+
+.header nav a:focus-visible,
+.logo a:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 4px;
+}
+
 .hero {
     height: 800px;
     width: 100%;
