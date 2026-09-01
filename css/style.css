@@ -13,6 +13,9 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
 
 .header h1 {
@@ -31,14 +34,18 @@ body {
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
-    float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
 
+
 .header nav ul {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
+
 
 .header nav ul li {
     display: inline-block;
@@ -188,4 +195,27 @@ p {
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .header nav ul {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .benefits {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
 }
