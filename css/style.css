@@ -211,6 +211,19 @@ main.content > h1 {
     flex-basis: 100%;
 }
 
+.marketing {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    flex: 1 1 70%;
+    min-width: 0;
+}
+
+.services {
+    flex: 1;
+}
+
 @media (max-width: 768px) {
 
     .header {
