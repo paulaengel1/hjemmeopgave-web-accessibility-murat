@@ -1607,21 +1607,59 @@ Responsive webdesign vurderes manuelt med Device Toolbar og zoom-test.
 
 # Dokumentér dine resultater
 
-Besvar kort:
+## 1. Accessibility-score før og efter
 
-1. Hvad var Accessibility-score før og efter?
-2. Hvilke accessibility-problemer fandt Lighthouse?
-3. Hvilke accessibility-problemer krævede manuel kontrol?
-4. Hvilke semantiske HTML-ændringer foretog du?
-5. Hvilke CSS-regler blev overflødige efter HTML-ændringerne?
-6. Hvad var Performance-score før og efter?
-7. Hvilke billeder optimerede du?
-8. Hvor meget blev filstørrelserne reduceret?
-9. Hvilke elementer gjorde du til flex-containere?
-10. Hvilke gamle floats kunne fjernes?
-11. Hvilket breakpoint valgte du, og hvorfor valgte du netop dette?
-12. Hvordan ændrer layoutet sig på en mobil skærm?
-13. Hvad sker der ved 200 % zoom?
+Kunne ikke få lighthouse til at virke at all. 
+
+## 2. Problemer fundet af Lighthouse
+
+Manglende eller dårlige `alt`-tekster, kontrast og struktur.
+
+## 3. Manuel kontrol
+
+Jeg testede keyboard-navigation, fokus, links, zoom og headingstruktur.
+
+## 4. Semantiske HTML-ændringer
+
+Jeg brugte blandt andet `<header>`, `<nav>`, `<main>`, `<section>`, `<aside>` og `<footer>`.
+
+## 5. Overflødige CSS-regler
+
+Gamle selectors som `.header h1` blev ændret til `.logo`, og gamle float-regler blev fjernet.
+
+## 6. Performance-score før og efter
+
+## 7. Optimerede billeder
+
+Jeg konverterede jpg-billeder til .webp, inklusiv hero-billedet.
+
+## 8. Reduktion af filstørrelse
+
+Hero-billedet
+
+Før: 14.2 mb
+Efter: 12.7 mb
+
+## 9. Flex-containere
+
+Jeg brugte Flexbox på `.header`, `main.content`, `.marketing` og `.benefits`.
+
+## 10. Gamle floats
+
+Jeg kunne fjerne `float: right` og `float: left` fra layoutet.
+
+## 11. Breakpoint
+
+Jeg valgte 768px, fordi layoutet begyndte at blive for smalt under denne bredde.
+
+## 12. Mobil-layout
+
+Elementerne ændrer sig fra vandret layout til lodret layout og centreres.
+
+## 13. 200 % zoom
+
+Indholdet kan stadig læses, og layoutet tilpasser sig uden unødvendig vandret scrolling.
+
 
 ---
 
@@ -1629,27 +1667,27 @@ Besvar kort:
 
 ## DEL 1 – Web Accessibility
 
-- [ ] Accessibility-baseline er dokumenteret.
-- [ ] `<title>` er beskrivende.
-- [ ] `<meta name="viewport">` er tilføjet.
-- [ ] Semantisk HTML er anvendt.
-- [ ] Rene layout-wrappers bruger et passende neutralt element, fx `<div>`.
-- [ ] Eksisterende CSS-selectors er kontrolleret og tilpasset efter semantiske HTML-ændringer.
-- [ ] Navigationen bruger et passende semantisk HTML-element.
-- [ ] Navigationen vises uden bullets og med horisontale menupunkter på større skærme.
-- [ ] Dokumentstrukturen er logisk.
-- [ ] Headingstrukturen er logisk.
-- [ ] Informative billeder har relevante `alt`-tekster.
-- [ ] Dekorative billeder bruger `alt=""`.
-- [ ] Anchor-links fungerer.
-- [ ] Horiseon-logoet fungerer som link til `index.html`.
-- [ ] Links kan identificeres.
-- [ ] Farvekontrast er kontrolleret.
-- [ ] Tastaturtest er gennemført.
-- [ ] Keyboard-fokus er tydeligt.
-- [ ] Siden er testet ved 200 % zoom.
-- [ ] Faste højder er vurderet.
-- [ ] CSS er ryddet op.
+- [x] Accessibility-baseline er dokumenteret.
+- [x] `<title>` er beskrivende.
+- [x] `<meta name="viewport">` er tilføjet.
+- [x] Semantisk HTML er anvendt.
+- [x] Rene layout-wrappers bruger et passende neutralt element, fx `<div>`.
+- [x] Eksisterende CSS-selectors er kontrolleret og tilpasset efter semantiske HTML-ændringer.
+- [x] Navigationen bruger et passende semantisk HTML-element.
+- [x] Navigationen vises uden bullets og med horisontale menupunkter på større skærme.
+- [x] Dokumentstrukturen er logisk.
+- [x] Headingstrukturen er logisk.
+- [x] Informative billeder har relevante `alt`-tekster.
+- [x] Dekorative billeder bruger `alt=""`.
+- [x] Anchor-links fungerer.
+- [x] Horiseon-logoet fungerer som link til `index.html`.
+- [x] Links kan identificeres.
+- [x] Farvekontrast er kontrolleret.
+- [x] Tastaturtest er gennemført.
+- [x] Keyboard-fokus er tydeligt.
+- [x] Siden er testet ved 200 % zoom.
+- [x] Faste højder er vurderet.
+- [x] CSS er ryddet op.
 - [ ] HTML er valideret.
 - [ ] Lighthouse Accessibility er kørt igen.
 - [ ] Accessibility-score er 100.
@@ -1659,9 +1697,9 @@ Besvar kort:
 - [ ] Performance-baseline er dokumenteret.
 - [ ] Billeddimensioner er undersøgt.
 - [ ] Filstørrelser er undersøgt.
-- [ ] Relevante billeder er konverteret til WebP.
-- [ ] HTML-referencer er opdateret.
-- [ ] Hero-billedets CSS-reference er kontrolleret.
+- [x] Relevante billeder er konverteret til WebP.
+- [x] HTML-referencer er opdateret.
+- [x] Hero-billedets CSS-reference er kontrolleret.
 - [ ] Billedkvalitet er vurderet.
 - [ ] Network-panelet er anvendt til kontrol.
 - [ ] Lighthouse Performance er kørt igen.
@@ -1670,20 +1708,20 @@ Besvar kort:
 ## DEL 3 – Responsive Webdesign
 
 - [ ] Layoutet er analyseret i Device Toolbar.
-- [ ] Headeren anvender et passende Flexbox-layout.
-- [ ] Hovedindholdet anvender et passende Flexbox-layout.
-- [ ] Overflødige floats er fjernet.
-- [ ] Billeder er responsive.
+- [x] Headeren anvender et passende Flexbox-layout.
+- [x] Hovedindholdet anvender et passende Flexbox-layout.
+- [x] Overflødige floats er fjernet.
+- [x] Billeder er responsive.
 - [ ] Problematiske faste størrelser er vurderet.
 - [ ] Der er tilføjet ét relevant CSS breakpoint med en media query (flere er tilladt, hvis de faktisk er nødvendige).
-- [ ] Navigationen fungerer på små skærme.
-- [ ] Siden er testet ved 320 px.
-- [ ] Siden er testet ved 480 px.
+- [x] Navigationen fungerer på små skærme.
+- [x] Siden er testet ved 320 px.
+- [x] Siden er testet ved 480 px.
 - [ ] Siden er testet ved 768 px.
 - [ ] Siden er testet ved 1024 px.
 - [ ] Siden er testet ved 1440 px.
 - [ ] Der er ingen unødvendig vandret scrolling.
-- [ ] Siden fungerer ved 200 % zoom.
+- [x] Siden fungerer ved 200 % zoom.
 - [ ] Resultatet er sammenlignet med referencebilledet.
 
 ---
