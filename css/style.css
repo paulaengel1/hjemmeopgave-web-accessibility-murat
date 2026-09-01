@@ -197,6 +197,20 @@ p {
     font-size: 36px;
 }
 
+main.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 1.2rem;
+
+    width: 100%;
+    padding: 0 20px;
+}
+
+main.content > h1 {
+    flex-basis: 100%;
+}
+
 @media (max-width: 768px) {
 
     .header {
